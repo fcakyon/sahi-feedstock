@@ -11,7 +11,7 @@ source:
   sha256: 52ca98a4f691e661a41d063142d8adc0849b2999a100e241fd584dfee26a9397
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - sahi=sahi.cli:app
@@ -22,17 +22,18 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - click
     - fire
-    - py-opencv >=4.2.0.32
     - pillow >=8.2.0
+    - py-opencv >=4.2.0.32
+    - pybboxes ==0.1.6
     - python >=3.6
+    - pytorch
     - pyyaml
+    - requests
     - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
-    - requests
-    - pytorch
-    - pybboxes ==0.1.4
 
 test:
   imports:
