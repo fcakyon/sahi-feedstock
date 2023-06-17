@@ -22,18 +22,18 @@ requirements:
     - pip
     - python >=3.6
   run:
+    - click
     - fire
-    - py-opencv >=4.2.0.32
     - pillow >=8.2.0
+    - py-opencv >=4.2.0.32
+    - pybboxes ==0.1.6
     - python >=3.6
+    - pytorch
     - pyyaml
+    - requests
     - shapely >=1.8.0
     - terminaltables
     - tqdm >=4.48.2
-    - requests
-    - pytorch
-    - pybboxes ==0.1.6
-    - click
 
 test:
   imports:
