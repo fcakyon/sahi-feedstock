@@ -40,7 +40,7 @@ test:
     - sahi
     - sahi.postprocess
   commands:
-     - pip check
+    - pip check
     - sahi --help
    requires:
     - pip
