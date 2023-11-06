@@ -11,7 +11,7 @@ source:
   sha256: ab55b570bee991fe0e873305be0080611530d8cf219a51a91e19132d61770322
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - sahi=sahi.cli:app
@@ -22,11 +22,10 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - opencv <=4.8
+    - py-opencv <=4.8
     - click
     - fire
     - pillow >=8.2.0
-    - py-opencv >=4.2.0.32
     - pybboxes ==0.1.6
     - python >=3.6
     - pytorch
@@ -41,10 +40,10 @@ test:
     - sahi
     - sahi.postprocess
   commands:
-    # - pip check
+    - pip check
     - sahi --help
-  # requires:
-  #  - pip
+  requires:
+    - pip
 
 about:
   home: https://github.com/obss/sahi
