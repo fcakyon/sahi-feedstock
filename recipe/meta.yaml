@@ -42,7 +42,7 @@ test:
   commands:
     - pip check
     - sahi --help
-   requires:
+  requires:
     - pip
 
 about:
